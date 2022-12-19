@@ -1,30 +1,17 @@
-# Práctica 5
+Desarrolla la siguiente actividad en equipos de 4 integrantes, recuerda que esta actividad será tu pase para el proyecto final.
 
-## Objetivos de la práctica
-Script para automatizar las siguientes actividades en un e-commerce: 
-- Registro de cuenta 
-- Inicio de sesión con la cuenta registrada previamente
-- Comprar 2 productos de cada categoría
-- Mostrar el carrito de la compra
-- Realizar la compra
-- Generar un reporte 
+### Requisitos previos:
+1. Instalar Selenium en sus computadoras y familiarizarse con su interfaz y sus principales funcionalidades.
 
-## Cosas a tomar en cuenta
+### Instrucciones:
 
-### Variables de entorno
-- Borrar .example del archivo .env.example. Por ejemplo: 
-    - `.env.example => .env`
-- Cambiar algunas variables o agregar de ser necesario
+2. Elegir un sitio web específico al que deben acceder utilizando Selenium. (por ejemplo, un sitio de comercio electrónico)
 
-### Version de Chrome y Chromedriver
-- Para esta práctica se usó la versión 104 de Chrome
-- Si tienes otra versión, puedes descargar el driver correspondiente desde [aquí](https://chromedriver.storage.googleapis.com/index.html)
+3. Cada equipo debe utilizar Selenium para interactuar con el sitio web asignado, realizando diferentes acciones como hacer clic en enlaces, rellenar formularios, seleccionar opciones en menús desplegables, etc.
 
-### Archivo Form Data Order
-Este archivo contiene los datos que se introducirán en orden a los campos del formulario de compra.
-- Name ( Nombre )
-- Country ( País )
-- City ( Ciudad )
-- Credit Card ( Tarjeta de Crédito )
-- Month ( Mes )
-- Year ( Año )
+4. Los estudiantes deben documentar sus acciones y resultados utilizando un lenguaje de programación compatible con Selenium, como Java o Python.
+
+Funcionalidades opcionales que pueden ayudar en la calificación del proyecto final
+Verificar la presencia de un elemento específico en la página, como el encabezado.
+Verificar el contenido de un elemento de la página, como el texto que se muestra en un botón
+Una vez que un equipo elija una página web, no podrá ser seleccionada por otro.

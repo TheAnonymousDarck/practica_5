@@ -15,8 +15,6 @@ d.get("https://demoqa.com/progress-bar")
 d.maximize_window()
 
 
-def inicio(d):
-    d.find_element(By.XPATH, '//*[@id="app"]/header/a').click()
     
 def test_a(d):
     d.find_element(By.ID, "userName").send_keys("test")
@@ -28,7 +26,6 @@ def test_a(d):
     d.find_element(By.ID, "permanentAddress").send_keys("USA 11941 Marcel Neck Suite 529 Minnesota")
     time.sleep(2)
     d.find_element(By.ID, "submit").click()
-    # inicio(d)
     time.sleep(5)
     
     
