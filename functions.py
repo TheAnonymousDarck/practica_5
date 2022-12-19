@@ -3,11 +3,11 @@ from selenium.webdriver.common.by import By
 import time
 
 d = webdriver.Chrome(r"\chromedriver_win32\chromedriver.exe")
-# d.get("https://demoqa.com/")
-d.get("https://demoqa.com/checkbox")
+# d.get("https://demoqa.com/text-box")
+# d.get("https://demoqa.com/checkbox")
+d.get("https://demoqa.com/radio-button")
 d.implicitly_wait(10)
 
-# d.get("https://demoqa.com/text-box")
 d.maximize_window()
 
 
@@ -27,22 +27,26 @@ def test_a(d):
     # inicio(d)
     time.sleep(5)
     
+    
 def test_b(d):
     # d.get("https://demoqa.com/checkbox")
     elemento = d.find_element(By.XPATH, '//*[@id="tree-node-home"]')
     
-    if elemento.is_selected() == True:
-        d.close()
-    else:
-        elemento.click()
-        time.sleep(2)
+    d.execute_script("arguments[0].click();", elemento)
     
     # inicio(d)
     time.sleep(5)
 
 
-# test_a_text_box(d)
+def test_c(d):
+    # d.get("https://demoqa.com/checkbox")
+    elemento = d.find_element(By.XPATH, '//*[@id="yesRadio"]')
+    
+    d.execute_script("arguments[0].click();", elemento)
+    
+    
+    # inicio(d)
+    time.sleep(5)
 
-test_b(d)
 
-# d.quit()
+test_c(d)
