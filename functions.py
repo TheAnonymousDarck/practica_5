@@ -8,8 +8,9 @@ d = webdriver.Chrome(r"\chromedriver_win32\chromedriver.exe")
 # d.get("https://demoqa.com/text-box")
 # d.get("https://demoqa.com/checkbox")
 # d.get("https://demoqa.com/radio-button")
-d.get("https://demoqa.com/alerts")
-d.implicitly_wait(10)
+# d.get("https://demoqa.com/alerts")
+d.get("https://demoqa.com/progress-bar")
+# d.implicitly_wait(10)
 
 d.maximize_window()
 
@@ -73,5 +74,14 @@ def test_d(d):
     alert.accept()
     time.sleep(5)
 
-
-test_d(d)
+def test_e(d):
+    btn = d.find_element(By.ID, 'startStopButton')
+    btn.click()
+    time.sleep(2)
+    btn.click()
+    time.sleep(2)
+    btn.click()
+    time.sleep(10)
+    
+    
+test_e(d)
